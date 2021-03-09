@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.hero {
+  background-image: url("/images/hero-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: -70px -60px 0 -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    @include font(300, 65px, 85px);
+    span {
+      color: var(--main-color);
+      @include font(700, 65px, 85px);
+      @include media(xs) {
+        font-size: 45px;
+      }
+    }
+    @include media(xs) {
+      font-size: 45px;
+    }
+  }
+  @include media(xs) {
+    margin: -70px -20px 0 -20px;
+  }
+}
