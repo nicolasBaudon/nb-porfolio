@@ -1,6 +1,6 @@
 @import "../../styles/mixins.scss";
 
-.hero {
+.container {
   background-image: url("/images/hero-background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -21,6 +21,28 @@
     }
     @include media(xs) {
       font-size: 45px;
+    }
+  }
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    span {
+      @include font(700, 18px, 34px);
+      @include media(xs) {
+        @include font(700, 16px, 30px);
+      }
+    }
+    img {
+      width: 28px;
+      @include media(xs) {
+        width: 25px;
+      }
     }
   }
   @include media(xs) {

@@ -1,0 +1,24 @@
+@import "../../styles/mixins.scss";
+
+.container {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+  ul {
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin: 20px 0;
+      a {
+        img {
+          width: 26px;
+        }
+      }
+    }
+  }
+  @include media(xs) {
+    transform: unset;
+    top: 90px;
+  }
+}

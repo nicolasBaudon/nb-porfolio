@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+
+.container {
+  text-align: left;
+  h2 {
+    @include font(700, 42px, 52px);
+    margin-bottom: 20px;
+  }
+  nav {
+    margin: 100px 0;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

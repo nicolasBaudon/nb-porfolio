@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Routes from "./routes/routes";
 import Header from "./components/header/header";
 import SocialsSidebar from "./components/socials-sidebar/socials-sidebar";
+import Footer from "./components/footer/footer";
 
 function App() {
   const appLocation = useLocation();
@@ -26,6 +27,7 @@ function App() {
       <Header />
       <SocialsSidebar />
       <Routes />
+      <Footer />
     </>
   );
 }

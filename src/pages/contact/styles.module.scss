@@ -1,0 +1,50 @@
+@import "../../styles/mixins.scss";
+
+.container {
+  height: 90vh;
+  text-align: right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  h2 {
+    @include font(700, 42px, 52px);
+    margin-bottom: 20px;
+  }
+  article {
+    p {
+      margin: 20px 0;
+      @include font(300, 20px, 34px);
+    }
+  }
+  a {
+    display: block;
+    width: max-content;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    border: unset;
+    color: var(--white) !important;
+    @include font(700, 18px, 20px);
+    margin: 20px 0 0 auto;
+    @include media(xs) {
+      margin: 20px auto;
+    }
+  }
+  .section_decoration {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(0, -50%) rotate(180deg);
+    z-index: -1;
+    @include media(xs) {
+      display: none;
+    }
+  }
+  @include media(xs) {
+    text-align: center;
+    margin-right: 0;
+  }
+}

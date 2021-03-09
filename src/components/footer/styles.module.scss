@@ -1,0 +1,12 @@
+@import "../../styles/mixins.scss";
+
+.footer {
+  text-align: center;
+  @include font(300, 16px, 20px);
+  p {
+    margin-bottom: 8px;
+  }
+  @include media(xs) {
+    @include font(300, 14px, 18px);
+  }
+}
