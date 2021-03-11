@@ -42,7 +42,7 @@ const Menu = () => {
         </nav>
       </Dialog>
       <div onClick={handleVisibilityModal}>
-        <Hamburger />
+        <Hamburger toggled={show} toggle={handleVisibilityModal} />
       </div>
     </>
   );
