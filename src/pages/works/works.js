@@ -1,5 +1,4 @@
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 import WorkItem from "../../components/work-item/work-item";
@@ -22,9 +21,7 @@ const Works = () => {
             <ul>
               {works.map((item, i) => (
                 <li key={i}>
-                  <Link to="/contact">
-                    <WorkItem item={item} />
-                  </Link>
+                  <WorkItem item={item} />
                 </li>
               ))}
             </ul>
