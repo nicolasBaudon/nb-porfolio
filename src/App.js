@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     if (
       appLocation.pathname === "/contact" ||
-      appLocation.pathname.match(/(works-)/i)
+      appLocation.pathname.match(/(work-)/i)
     ) {
       document.body.classList.remove("dark-theme");
       document.body.classList.add("light-theme");

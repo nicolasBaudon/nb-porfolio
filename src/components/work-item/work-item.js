@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 const WorkItem = ({ item }) => {
   return (
-    <Link to="/works">
+    <Link to={`/works/work-${item.id}`}>
       <div className={styles.container}>
         <h3>{item.name}</h3>
         <span>{item.description}</span>

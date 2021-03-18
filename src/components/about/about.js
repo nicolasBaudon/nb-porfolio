@@ -2,7 +2,12 @@ import Grid from "@material-ui/core/Grid";
 
 import styles from "./styles.module.scss";
 
+const today = new Date();
+const initialDate = new Date(2018, 0, 1);
+
 const About = () => {
+  const experience = today.getFullYear() - initialDate.getFullYear();
+
   return (
     <section id="about-container" className={styles.container}>
       <Grid container spacing={12}>
@@ -12,8 +17,8 @@ const About = () => {
           <article>
             <p>
               Hi! I am <strong>Nicolás</strong>. I’m a experienced FrontEnd
-              developer with more than 3 years working with frontend and backend
-              technologies.
+              developer with more than {experience} years working with frontend
+              and backend technologies.
             </p>
             <p>
               I consider myself a proactive and responsible person, with great

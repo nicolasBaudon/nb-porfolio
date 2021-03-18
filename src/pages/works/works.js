@@ -4,11 +4,19 @@ import styles from "./styles.module.scss";
 import WorkItem from "../../components/work-item/work-item";
 
 const works = [
-  { name: "Spark Digital", description: "Consulting Job - Present" },
-  { name: "Almundo.com", description: "Product Job" },
-  { name: "WeCoach", description: "Freelance React App" },
-  { name: "E-carta/E-lista", description: "Freelance React App" },
-  { name: "AccessGo", description: "CakePHP App" },
+  {
+    id: "spark",
+    name: "Spark Digital",
+    description: "Consulting Job - Present",
+  },
+  { id: "almundo", name: "Almundo.com", description: "Product Job" },
+  { id: "wecoach", name: "WeCoach", description: "Freelance React App" },
+  {
+    id: "e-carta-lista",
+    name: "E-carta/E-lista",
+    description: "Freelance React App",
+  },
+  { id: "accessgo", name: "AccessGo", description: "CakePHP App" },
 ];
 
 const Works = () => {
