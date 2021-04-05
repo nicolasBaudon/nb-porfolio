@@ -5,8 +5,8 @@ import WorkItem from "../../components/work-item/work-item";
 
 const works = [
   {
-    id: "spark",
-    name: "Spark Digital",
+    id: "rocket",
+    name: "Rocket Insights",
     description: "Consulting Job - Present",
   },
   { id: "almundo", name: "Almundo.com", description: "Product Job" },
@@ -24,7 +24,7 @@ const Works = () => {
     <section className={styles.container}>
       <Grid container spacing={12}>
         <Grid item lg={12} md={12} sm={12} xs={12}>
-          <h2>Some Works</h2>
+          <h2>Works</h2>
           <nav>
             <ul>
               {works.map((item, i) => (
